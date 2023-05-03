@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="/all.css">
+</head>
+<body>
+    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>書籍を照会する</title>
+        <link rel="stylesheet" href="/all.css">
+    </head>
+    <body>
+        <div class="bd"> 
+    
+            <div class="nav">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="/index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./addbook.html">ブックの追加</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./editbook.html">書籍の修正</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./find_classification.html">分類の検索</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./search.html">書籍の照会</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./purchase.html">在庫の更新</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./price update.html">価格の更新</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./buybook.html">ブックの購入</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./ranking.html">トップ5の販売量</a>
+                </li>
+              </ul>
+                </div>
+        
+        
+            <div>
+              <h1 class="h1 text-center">消費者とメーカーは書籍を照会する</h1>
+              <div class="contents2 w-100 bg-light py-5">
+                <div class="area  ">
+                    
+                        <form id="form1">
+                            <p>身分：<input type="radio" name="r"value="客人" id="radio1" />客人
+                                    <input type="radio" name="r" value="廠商" id="radio2" />廠商
+                            </p>
+                        </form>
+
+                </div>
+                <div class="area  my-3">
+                  <p>查詢ID：<input type="text" placeholder="輸入要查詢的條碼" id="text1"/></p>
+                </div>
+                <div class="area  my-3">
+                    <p>書名： <input type="text" placeholder="輸入要查詢的欄位" id="text2" /></p>
+                </div>
+                <div class="area my-3">
+                    <p>作者：<input type="text"  placeholder="輸入要查詢的欄位" id="text3" /></p>
+                </div>
+                
+                <div class="area ">
+                    <p>類別：<input type="text"  placeholder="輸入要查詢的欄位" id="text5"/></p>
+                </div >
+                
+                <button type="button" class="bt mx-auto  my-3 d-flex" id="button">修改</button>
+              </div>
+              
+            </div>
+        
+                <p class="message" ></p>
+        
+        </div>
+    
+    
+        <script src="/js/search.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分類の検索する</title>
+    <link rel="stylesheet" href="/all.css">
+</head>
+<body>
+    <div class="bd"> 
+
+        <div class="nav">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="/index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="./addbook.html">ブックの追加</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./editbook.html">書籍の修正</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./find_classification.html">分類の検索</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./Search.html">書籍の照会</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./purchase.html">在庫の更新</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./price update.html">価格の更新</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./buybook.html">ブックの購入</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="./ranking.html">トップ5の販売量</a>
+                </li>
+              </ul>
+        </div>
+    
+        <div>
+          <h1 class="h1 text-center">分類の検索する</h1>
+          <div class="contents2 w-100 bg-light py-5">
+            <div class="area ">
+              <p>查詢類別：<input type="text" placeholder="不同類別，請用 ' , ' 隔開" id="text1"/></p>
+            </div>           
+
+              <!-- Button trigger modal -->
+              <button id="button" type="button" class="btn btn-primary mx-auto  my-3 d-flex" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                検索
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">検索結果</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body "id="windows">
+                      
+                    </div>
+
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary " data-bs-dismiss="modal">閉じる</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         
+        </div>
+
+        
+    
+           
+    
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="/js/find_classification.js"></script>
+</body>
+</html>

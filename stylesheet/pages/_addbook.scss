@@ -1,0 +1,33 @@
+.contents2{
+    width: 90vw;
+    border-radius: 25px;
+}
+
+.area{
+display:flex;
+justify-content: space-evenly;
+}
+
+
+
+.bd{
+    display:flex;
+    flex-direction: column;
+
+}
+.navlist{
+    display: flex;
+    border-bottom: 1px rgb(0, 132, 255)d blue;
+    
+}
+.nav-link:hover{
+    background-color: #e49bac;
+    color: white;
+    transition: 0.5s;
+    border-radius:5%;
+    transform:scale(1.2);
+}
+
+.h1{
+    padding-top: 10px;
+}

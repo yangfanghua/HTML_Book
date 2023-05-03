@@ -1,0 +1,47 @@
+
+.index-body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image:url("./img/indexBg.jpg");
+    background-color: rgba(59, 56, 56, 0.548);
+}
+
+.all{
+    padding-top: 50vh;
+
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 25vh;
+    border-radius: 25px;
+    //margin:70vh 6vh 4vw 6vw;
+    
+    
+    .divlist{
+        display: flex;
+        margin: 18px 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .button{
+        font-size: 10%;
+        background-color: rgb(233, 173, 104);
+        
+    }
+
+    .button:hover{
+        transition: 0.3s;
+        transform: scale(1.2);
+        box-shadow:5px 5px 2px rgb(31, 30, 30);
+    }
+    }
+
+}   
+    
+
+
