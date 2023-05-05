@@ -6,8 +6,15 @@ const t3=document.querySelector("#text3");
 const t4=document.querySelector("#text4");
 const t5=document.querySelector("#text5");
 const m=document.querySelector(".message");
+const isbn=document.querySelector("#isbn");
+const name1=document.querySelector("#name");
+const writer=document.querySelector("#writer");
+const price=document.querySelector("#price");
+const classification=document.querySelector("#classification");
+
 
 btn.addEventListener("click",function(){
+  let arr=[];
   let body={
     "booklist": [
         {
@@ -35,16 +42,24 @@ btn.addEventListener("click",function(){
     .then(function (data) {
       //我們在做事的地方
       console.log(data);
-       body = data;
-       console.log(body);
-       alert(body.message);
+      arr = data;
+       console.log(arr);
+       alert(arr.message);
+       fn()
     })
     .catch(function (error) {
       //抓資料不成功 錯誤 就會進cath
       console.log(error);
     });
 
+ function fn(){
+  isbn.innerHTML=`條碼：${arr.booklist[0].isbn}`;
+  name1.innerHTML=`書名：${arr.booklist[0].name}`;
+  writer.innerHTML=`著者：${arr.booklist[0].writer}`;
+  price.innerHTML=`價格：${arr.booklist[0].price}`;
+  classification.innerHTML=`類別：${arr.booklist[0].classification}`;
 
+}
 
 
 

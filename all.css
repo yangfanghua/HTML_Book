@@ -10886,6 +10886,10 @@ textarea.form-control-lg {
   padding-top: 10px;
 }
 
+.addlist {
+  text-align: center;
+}
+
 body {
   background-color: #eee48c;
   width: 100vw;
