@@ -36,7 +36,6 @@ btn.addEventListener("click",function(){
        
     })
     .catch(function (error) {
-      //抓資料不成功 錯誤 就會進cath
       console.log(error);
     });
 
